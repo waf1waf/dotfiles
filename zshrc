@@ -87,3 +87,4 @@ source $ZSH/oh-my-zsh.sh
 export CDPATH=.:~:~/dev
 
 alias tls='tmux ls'
+alias tm='tmux attach'
