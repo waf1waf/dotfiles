@@ -89,3 +89,15 @@ export CDPATH=.:~:~/dev
 alias tls='tmux ls'
 alias tm='tmux attach'
 alias myip='ifconfig | grep "inet " | grep -v 127.0.0.1 | cut -f 2 -d " "'
+
+if [[ `uname` == 'Darwin' ]]
+then
+    export OSX=1
+else
+    export OSX=
+fi
+
+if [[ "$OSX" == "1" ]]
+then
+    export JAVA_HOME=$(/usr/libexec/java_home)
+fi
