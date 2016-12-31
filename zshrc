@@ -104,3 +104,7 @@ then
 fi
 
 export EDITOR=vim
+
+export M2_HOME=/user/local/apache-maven
+export M2=$M2_HOME/bin
+export PATH=$M2:$PATH
