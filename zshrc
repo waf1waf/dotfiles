@@ -89,7 +89,7 @@ export CDPATH=.:~:~/dev
 alias tls='tmux ls'
 alias tm='tmux attach'
 alias svnst='svn status | grep -v ^X | grep -v "^    X" | grep -v "^$" | grep -v "^P"'
-alias myip="ifconfig | grep 'inet ' | awk -F' ' '{print \$2}' | grep -v 127.0.0.1"
+alias ips="ifconfig | grep 'inet ' | awk -F' ' '{print \$2}' | grep -v 127.0.0.1"
 
 if [[ `uname` == 'Darwin' ]]
 then
