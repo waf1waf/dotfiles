@@ -22,6 +22,7 @@ echo "Changing to $dir directory"
 cd $dir
 echo "...done"
 
+
 # Move any exisint dotfile in homedir to dotfiles_old directory
 for file in $files; do
     echo "Moving any existing dotfiles form ~ to $olddir"
@@ -29,3 +30,11 @@ for file in $files; do
     echo "Creating symlink to $file in home directory."
     ln -s $dir/$file ~/.$file
 done
+
+if [ ! -d "~/.ssh" ]; then
+    echo "No .ssh directory, so create one with ssh-keygen"
+    ssh-keygen -f ~/.ssh/id_rsa -t rsa -N ''
+fi
+
+rm -f ~/.ssh/config
+ln -s ./config ~/.ssh/config
