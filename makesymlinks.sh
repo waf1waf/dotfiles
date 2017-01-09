@@ -8,7 +8,7 @@
 
 dir=~/dotfiles
 olddir=~/dotfiles_old
-files="bashrc vimrc zshrc oh-my-zsh tmux.conf" # List of files/folders to sync
+files="bashrc vimrc zshrc tmux.conf" # List of files/folders to sync
 
 ########
 
