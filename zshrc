@@ -51,7 +51,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker)
+plugins=(git docker tmux)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -108,3 +108,5 @@ export EDITOR=vim
 export M2_HOME=/usr/local/apache-maven
 export M2=$M2_HOME/bin
 export PATH=$M2:$PATH
+
+alias nslookup='echo Use dig or host'
