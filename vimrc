@@ -18,4 +18,4 @@ nnoremap j gj
 nnoremap k gk
 
 set list
-" set listchars=tab:▸\ ,eol:¬,trail:☠
+set listchars=tab:▸\ ,eol:¬,trail:☠
