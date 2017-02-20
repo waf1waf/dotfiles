@@ -19,3 +19,8 @@ nnoremap k gk
 
 set list
 set listchars=tab:▸\ ,eol:¬,trail:·
+
+set foldmethod=indent
+set foldnestmax=10
+set nofoldenable
+set foldlevel=2
