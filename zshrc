@@ -99,14 +99,17 @@ else
 fi
 
 if [[ "$OSX" == "1" ]]
+	alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
 then
     export JAVA_HOME=$(/usr/libexec/java_home)
 fi
 
 export EDITOR=vim
 
-export M2_HOME=/usr/local/apache-maven
+export M3_HOME=/usr/local/apache-maven
 export M2=$M2_HOME/bin
 export PATH=$M2:$PATH
 
 alias nslookup='echo Use dig or host'
+export ANDROID_HOME=/usr/local/opt/android-sdk
+export CDPATH=$CDPATH:~/Downloads
