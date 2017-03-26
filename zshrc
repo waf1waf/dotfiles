@@ -84,7 +84,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export CDPATH=.:~:~/dev
+export CDPATH=.:~:~/dev/mdavs:~/dev
 
 alias tls='tmux ls'
 alias tm='tmux attach'
@@ -113,3 +113,5 @@ export PATH=$M2:$PATH
 alias nslookup='echo Use dig or host'
 export ANDROID_HOME=/usr/local/opt/android-sdk
 export CDPATH=$CDPATH:~/Downloads
+
+export CDPATH=.:~/dev/mdavs/rpms:~/dev/mdavs/rpms/SOURCES:~/dev/mdavs/rpms/SOURCES/filters:$CDPATH
