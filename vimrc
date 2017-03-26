@@ -19,3 +19,4 @@ nnoremap k gk
 
 set list
 set listchars=tab:▸\ ,eol:¬,trail:·
+set history=200
