@@ -95,13 +95,15 @@ if [[ `uname` == 'Darwin' ]]
 then
     export OSX=1
 else
-    export OSX=
+    export OSX=0
 fi
 
-if [[ "$OSX" == "1" ]]
-	alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
+if [[ $OSX -eq 1 ]]
 then
-    export JAVA_HOME=$(/usr/libexec/java_home)
+	alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
+	export JAVA_HOME=$(/usr/libexec/java_home)
+else
+	alias vim='/bin/vim'
 fi
 
 export EDITOR=vim
