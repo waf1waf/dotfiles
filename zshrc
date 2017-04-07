@@ -117,3 +117,5 @@ export ANDROID_HOME=/usr/local/opt/android-sdk
 export CDPATH=$CDPATH:~/Downloads
 
 export CDPATH=.:~/dev/mdavs/rpms:~/dev/mdavs/rpms/SOURCES:~/dev/mdavs/rpms/SOURCES/filters:$CDPATH
+
+alias gprod='git pull --rebase origin dev'
