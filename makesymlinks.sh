@@ -6,27 +6,27 @@
 
 # Variables
 
-dir=$HOME/dotFiles
-olddir=$HOME/dotFiles_old
+dir=$HOME/dotfiles
+olddir=$HOME/dotfiles_old
 files="bashrc vimrc zshrc tmux.conf" # List of files/folders to sync
 
 ########
 
-# Create dotFiles_old in homedir
-echo "Creating $olddir for backup of any existing dotFiles in $HOME"
+# Create dotfiles_old in homedir
+echo "Creating $olddir for backup of any existing dotfiles in $HOME"
 mkdir -p $olddir
 echo "...done"
 
-# Change to dotFiles directory
+# Change to dotfiles directory
 echo "Changing to $dir directory"
 cd $dir
 echo "...done"
 
 
-# Move any exisint dotfile in homedir to dotFiles_old directory
+# Move any exisint dotfile in homedir to dotfiles_old directory
 for file in $files; do
-    echo "Moving any existing dotFiles form $HOME to $olddir"
-    mv $HOME/.$file $HOME/dotFiles_old/
+    echo "Moving any existing dotfiles form $HOME to $olddir"
+    mv $HOME/.$file $HOME/dotfiles_old/
     echo "Creating symlink to $file in home directory."
     ln -s $dir/$file $HOME/.$file
 done
