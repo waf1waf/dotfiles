@@ -119,3 +119,5 @@ export CDPATH=$CDPATH:~/Downloads
 export CDPATH=.:~/dev/mdavs/rpms:~/dev/mdavs/rpms/SOURCES:~/dev/mdavs/rpms/SOURCES/filters:$CDPATH
 
 alias gprod='git pull --rebase origin dev'
+
+alias vg='valgrind --leak-check=full'
