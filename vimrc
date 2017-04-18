@@ -28,3 +28,22 @@ set foldlevel=2
 
 highlight SpecialKey ctermfg=59
 highlight NonText ctermfg=59
+
+let mapleader = "\<Space>"
+
+nmap <leader>vr :sp $MYVIMRC<cr>
+nmap <leader>so :source $MYVIMRC<cr>
+
+" Use jk or kj to be escape
+imap jk <esc>
+imap kj <esc>
+
+" Handle wrapped lines better
+nmap k gk
+nmap j gj
+
+" Ctrl-S to write
+map <C-s> <esc>:w<cr>
+imap <C-s> <esc>:w<cr>
+
+set incsearch
