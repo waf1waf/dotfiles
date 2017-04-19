@@ -1,0 +1,11 @@
+[user]
+	name = Wayne Franklin
+	email = waf1waf@gmail.com
+[color]
+	ui = true
+[push]
+	default = simple
+[merge]
+	ff = only
+[fetch]
+	prune = true
