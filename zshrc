@@ -121,3 +121,5 @@ export CDPATH=.:~/dev/mdavs/rpms:~/dev/mdavs/rpms/SOURCES:~/dev/mdavs/rpms/SOURC
 alias gprod='git pull --rebase origin dev'
 
 alias vg='valgrind --leak-check=full'
+
+alias ack='echo "Use ag"'
