@@ -38,3 +38,7 @@ fi
 
 rm -f $HOME/.ssh/config
 ln -s ./config $HOME/.ssh/config
+
+
+# Make directory for persistent undo
+mkdir -p ~/.vim/undodir

@@ -47,3 +47,6 @@ map <C-s> <esc>:w<cr>
 imap <C-s> <esc>:w<cr>
 
 set incsearch
+
+set undofile               " Allow persistent undo
+set undodir=~/.vim/undodir " Place to store undofiles
