@@ -19,7 +19,8 @@ nnoremap k gk
 
 set list
 set history=200
-set listchars=tab:→·,eol:¬,trail:·
+" set listchars=tab:→·,eol:¬,trail:·
+set listchars=tab:.·,eol:$,trail:.
 
 set foldmethod=indent
 set foldnestmax=10
