@@ -115,8 +115,8 @@ export PATH=$M2:$PATH
 alias nslookup='echo Use dig or host'
 export ANDROID_HOME=/usr/local/opt/android-sdk
 export CDPATH=$CDPATH:~/Downloads
-
 export CDPATH=.:~/dev/mdavs/rpms:~/dev/mdavs/rpms/SOURCES:~/dev/mdavs/rpms/SOURCES/filters:$CDPATH
+export CDPATH=$CDPATH:~/Docker
 
 alias gprod='git pull --rebase origin dev'
 
