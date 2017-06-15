@@ -1,0 +1,13 @@
+[user]
+	name = Wayne Franklin
+	email = wayne.franklin@tridsys.com
+[color]
+	ui = true
+[push]
+	default = simple
+[merge]
+	ff = only
+[fetch]
+	prune = true
+[http]
+	sslVerify = false
