@@ -2,7 +2,7 @@
 
 if [ -d "$HOME/.oh-my-zsh" ]; then
     echo "You already have oh-my-zsh"
-    exit 1
+    exit 0
 fi
 
 pushd .
