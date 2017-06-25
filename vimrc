@@ -1,13 +1,13 @@
-set nocompatible	" Get rid of Vi compatibility
-set t_Co=256		" Set 256 colors
-syntax enable		" enable syntax highlighting
-set number			" show line numbers
-set shiftwidth=4	" indent/outdent 4 columns
-set tabstop=4		" tab spacing
+set nocompatible    " Get rid of Vi compatibility
+set t_Co=256        " Set 256 colors
+syntax enable       " enable syntax highlighting
+set number          " show line numbers
+set shiftwidth=4    " indent/outdent 4 columns
+set tabstop=4       " tab spacing
 set softtabstop=4   " number of spaces in tab when editing
-set noexpandtab		" Use spaces instead of tabs
-set smarttab		" Use tabs at start of line, spaces elsewhere
-set nowrap			" Don't wrap
+set expandtab       " Use spaces instead of tabs
+set smarttab        " Use tabs at start of line, spaces elsewhere
+set nowrap          " Don't wrap
 set showmatch       " highlight matching [{()}]
 
 set incsearch       " search as characters are typed
@@ -19,8 +19,8 @@ nnoremap k gk
 
 set list
 set history=200
-" set listchars=tab:→·,eol:¬,trail:·
-set listchars=tab:.·,eol:$,trail:.
+set listchars=tab:→·,eol:¬,trail:·
+" set listchars=tab:.·,eol:$,trail:.
 
 set foldmethod=indent
 set foldnestmax=10
@@ -51,3 +51,15 @@ set incsearch
 
 set undofile               " Allow persistent undo
 set undodir=~/.vim/undodir " Place to store undofiles
+
+if empty(glob('~/.vim/autoload/plug.vim'))
+    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+        \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+call plug#begin('~/.vim/bundle')
+Plug 'rakr/vim-one.vim'
+Plug 'tommcdo/vim-lion.vim'
+Plug 'wellle/targets.vim'
+call plug#end()
