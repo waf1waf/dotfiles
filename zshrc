@@ -100,10 +100,10 @@ fi
 
 if [[ $OSX -eq 1 ]]
 then
-	alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
-	export JAVA_HOME=$(/usr/libexec/java_home)
+    alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
+    export JAVA_HOME=$(/usr/libexec/java_home)
 else
-	alias vim='/bin/vim'
+    alias vim='/bin/vim'
 fi
 
 export EDITOR=vim
@@ -131,3 +131,4 @@ export PATH="/usr/local/opt/icu4c/sbin:$PATH"
 export PATH="/usr/local/scala/bin:$PATH"
 
 alias root='sudo su -'
+alias ic='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
