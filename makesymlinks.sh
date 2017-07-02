@@ -12,6 +12,19 @@ files="vimrc zshrc tmux.conf" # List of files/folders to sync
 
 ########
 
+echo "Get oh-my-zsh"
+if [ ! -d "$HOME/.oh-my-zsh" ]; then
+    pushd .
+    cd
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    popd
+
+    mkdir -p $HOME/.oh-my-zsh/custom/themes
+#    cp $HOME/.dotfiles/agnoster.zsh-theme $HOME/.oh-my-zsh/custom/themes/
+    mv $HOME/.zshrc /tmp/zshrc
+    ln -s $dir/zshrc $HOME/.zshrc
+fi
+
 # Create dotfiles_old in homedir
 if [ ! -d $olddir ]; then
     echo "Creating $olddir for backup of any existing dotfiles in $HOME"
