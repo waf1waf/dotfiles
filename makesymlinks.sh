@@ -68,3 +68,4 @@ mkdir -p ~/.vim/undodir
 # Don't worry, this will fail if the directory is not empty
 echo "Remove default directories"
 rmdir /home/waynef/Desktop /home/waynef/Documents /home/waynef/Downloads /home/waynef/Music /home/waynef/Pictures /home/waynef/Public /home/waynef/Templates /home/waynef/Videos 2>/dev/null
+exit 0
