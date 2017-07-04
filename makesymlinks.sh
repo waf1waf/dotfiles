@@ -66,6 +66,19 @@ mkdir -p ~/.vim/undodir
 
 # Remove default directories 
 # Don't worry, this will fail if the directory is not empty
-echo "Remove default directories"
-rmdir /home/waynef/Desktop /home/waynef/Documents /home/waynef/Downloads /home/waynef/Music /home/waynef/Pictures /home/waynef/Public /home/waynef/Templates /home/waynef/Videos 2>/dev/null
+if [ `uname` == 'Linux' ]; then
+    echo "Remove default directories"
+    rmdir /home/waynef/Desktop /home/waynef/Documents /home/waynef/Downloads /home/waynef/Music /home/waynef/Pictures /home/waynef/Public /home/waynef/Templates /home/waynef/Videos 2>/dev/null
+    rm -f ~/.gitconfig
+    ln -s $dir/gitconfig-work ~/.gitconfig
+    git config --global user.email "wayne.franklin@tridsys.com"
+else
+    rm -f ~/.gitconfig
+    ln -s $dir/gitconfig-home ~/.gitconfig
+    git config --global user.email "waf1waf@gmail.com"
+fi
+git config --global user.name "Wayne Franklin"
+git config --global color.ui true
+git config --global push.default simple
+
 exit 0
