@@ -11,7 +11,7 @@
 # current repo has changes that have not been checked
 # in, there will be a .SUSPECT added.
 
-branch=`git status | grep 'On branch' | awk '{ print $4 }'`
+branch=`git rev-parse --abbrev-ref HEAD`
 version=`git log | grep '^commit' | wc -l`
 supect='.SUSPECT'
 stat=`git status --porcelain`
