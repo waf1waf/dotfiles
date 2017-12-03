@@ -19,13 +19,8 @@ nnoremap k gk
 
 set list
 set history=200
-set listchars=tab:→·,eol:¬,trail:·
+" set listchars=tab:→·,eol:¬,trail:·
 " set listchars=tab:.·,eol:$,trail:.
-
-set foldmethod=indent
-set foldnestmax=10
-set nofoldenable
-set foldlevel=2
 
 highlight SpecialKey ctermfg=59
 highlight NonText ctermfg=59
@@ -57,9 +52,3 @@ if empty(glob('~/.vim/autoload/plug.vim'))
         \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
     autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
-
-" call plug#begin('~/.vim/bundle')
-" Plug 'rakr/vim-one.vim'
-" Plug 'tommcdo/vim-lion.vim'
-" Plug 'wellle/targets.vim'
-" call plug#end()
