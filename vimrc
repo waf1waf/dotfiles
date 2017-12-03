@@ -58,8 +58,8 @@ if empty(glob('~/.vim/autoload/plug.vim'))
     autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-call plug#begin('~/.vim/bundle')
-Plug 'rakr/vim-one.vim'
-Plug 'tommcdo/vim-lion.vim'
-Plug 'wellle/targets.vim'
-call plug#end()
+" call plug#begin('~/.vim/bundle')
+" Plug 'rakr/vim-one.vim'
+" Plug 'tommcdo/vim-lion.vim'
+" Plug 'wellle/targets.vim'
+" call plug#end()
