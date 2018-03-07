@@ -13,4 +13,4 @@ popd
 mkdir -p $HOME/.oh-my-zsh/custom/themes
 cp $HOME/dotfiles/agnoster.zsh-theme $HOME/.oh-my-zsh/custom/themes/
 mv $HOME/.zshrc /tmp/zshrc
-ln -s $HOME/dotfiles/zshrc $HOME/.zshrc
+ln -s $HOME/.dotfiles/zshrc $HOME/.zshrc
