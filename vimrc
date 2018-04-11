@@ -60,6 +60,6 @@ Plug 'wellle/targets.vim'
 call plug#end()
 
 " Use w!! when can't write because you need to be root
-cmap w!! w !sudo tee % >/dev/null
+cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
 
 let g:netrw_liststyle = 3
