@@ -102,8 +102,10 @@ if [[ $OSX -eq 1 ]]
 then
     alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
     export JAVA_HOME=$(/usr/libexec/java_home)
-else
+elif [[ -f /bin/vim ]] then
     alias vim='/bin/vim'
+elif [[ -f /usr/bin/vim ]] then
+    alias vim='/usr/bin/vim'
 fi
 
 export EDITOR=vim
