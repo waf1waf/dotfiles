@@ -17,9 +17,9 @@ set hlsearch        " hilight search matches
 nnoremap j gj
 nnoremap k gk
 
-set list
 set history=200
-set listchars=tab:→·,eol:¬,trail:·
+" set list
+" set listchars=tab:→·,eol:¬,trail:·
 " set listchars=tab:.·,eol:$,trail:.
 
 highlight SpecialKey ctermfg=59
