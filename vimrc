@@ -47,18 +47,6 @@ set incsearch
 set undofile               " Allow persistent undo
 set undodir=~/.vim/undodir " Place to store undofiles
 
-if empty(glob('~/.vim/autoload/plug.vim'))
-    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-        \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-endif
-
-call plug#begin('~/.vim/bundle')
-Plug 'rakr/vim-one.vim'
-Plug 'tommcdo/vim-lion.vim'
-Plug 'wellle/targets.vim'
-call plug#end()
-
 " Use w!! when can't write because you need to be root
 cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
 
