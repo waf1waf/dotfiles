@@ -51,9 +51,22 @@ ZSH_THEME="steeef"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker docker-compose tmux yum)
+plugins=(
+    docker
+    docker-compose
+    git
+    history
+    last-working-dir
+    osx
+    sudo
+    tmux 
+    web-search
+    yum
+    zsh-autosuggestions
+)
 
 source $ZSH/oh-my-zsh.sh
+source /Users/waynef/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # User configuration
 
@@ -101,7 +114,7 @@ fi
 if [[ $OSX -eq 1 ]]
 then
     alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
-    export JAVA_HOME=$(/usr/libexec/java_home)
+    export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 elif [[ -f /bin/vim ]] then
     alias vim='/bin/vim'
 elif [[ -f /usr/bin/vim ]] then
