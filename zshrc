@@ -51,7 +51,7 @@ ZSH_THEME="steeef"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker docker-compose tmux vagrant)
+plugins=(git docker docker-compose tmux yum)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -135,3 +135,8 @@ export PATH="/usr/local/scala/bin:$PATH"
 
 alias root='sudo su -'
 alias ic='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
+
+alias docker='sudo /bin/docker'
+
+export GRADLE_HOME=/opt/gradle/gradle-5.0
+export PATH=$GRADLE_HOME/bin:$PATH
