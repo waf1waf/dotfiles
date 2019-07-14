@@ -22,7 +22,7 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-source /Users/waynef/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/waynef/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.dotfiles/z.sh
 
 # User configuration
