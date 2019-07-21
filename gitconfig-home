@@ -6,7 +6,7 @@
 [push]
 	default = simple
 [merge]
-	ff = only
+	ff = no
 [fetch]
 	prune = true
 [alias]
