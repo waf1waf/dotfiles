@@ -19,10 +19,10 @@ plugins=(
     web-search
     yum
     zsh-autosuggestions
+    zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
-source /Users/waynef/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.dotfiles/z.sh
 
 # User configuration
@@ -78,6 +78,13 @@ elif [[ -f /usr/bin/vim ]] then
     alias vim='/usr/bin/vim'
 fi
 
+if [[ $OSX -eq 1 ]]
+then
+    alias docker='/Applications/Docker.app/Contents/Resources/bin/docker'
+else
+    alias docker='sudo /bin/docker'
+fi
+
 export EDITOR=vim
 
 export M3_HOME=/usr/local/apache-maven
@@ -106,7 +113,6 @@ export PATH="/usr/local/scala/bin:$PATH"
 alias root='sudo su -'
 alias ic='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
 
-alias docker='sudo /bin/docker'
 
 alias update='source ~/.zshrc'
 
