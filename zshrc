@@ -118,3 +118,8 @@ alias update='source ~/.zshrc'
 
 export GRADLE_HOME=/opt/gradle/gradle-5.0
 export PATH=$GRADLE_HOME/bin:$PATH
+
+export LANG=en_US.UTF-8
+export LANGUAGE=en_US.UTF-8
+export LC_COLLATE=C
+export LC_CTYPE=en_US.UTF-8
