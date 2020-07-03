@@ -5,9 +5,11 @@
 	ui = true
 [push]
 	default = simple
-[merge]
-	ff = only
 [fetch]
 	prune = true
 [http]
 	sslVerify = false
+[core]
+	autocrlf = input
+[submodule]
+	recurse = true

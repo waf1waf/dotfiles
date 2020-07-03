@@ -51,3 +51,11 @@ set undodir=~/.vim/undodir " Place to store undofiles
 cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
 
 let g:netrw_liststyle = 3
+
+nnoremap n nzz
+nnoremap N Nzz
+nnoremap * *zz
+nnoremap # #zz
+nnoremap g* g*zz
+nnoremap g# g#zz
+
