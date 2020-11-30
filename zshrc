@@ -128,3 +128,6 @@ export LC_CTYPE=en_US.UTF-8
 
 alias podman='sudo /bin/podman'
 alias skopeo='sudo /bin/skopeo'
+alias ag='ag --path-to-ignore ~/.ignore'
+
+export PATH=/opt/maven/bin:$PATH
