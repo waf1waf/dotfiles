@@ -59,3 +59,5 @@ nnoremap # #zz
 nnoremap g* g*zz
 nnoremap g# g#zz
 
+" Create a place for swap files
+set directory=$HOME/.vim/swp//
