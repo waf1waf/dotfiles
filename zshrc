@@ -118,7 +118,7 @@ alias ic='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
 
 alias update='source ~/.zshrc'
 
-export GRADLE_HOME=/opt/gradle/gradle-5.0
+export GRADLE_HOME=/opt/gradle/gradle-6.4.1
 export PATH=$GRADLE_HOME/bin:$PATH
 export MAVEN_HOME=/opt/maven
 export PATH=$MAVEN_HOME/bin:$PATH
@@ -131,8 +131,9 @@ export LC_CTYPE=en_US.UTF-8
 alias podman='sudo /usr/local/bin/podman'
 alias skopeo='sudo /bin/skopeo'
 alias ag='ag --path-to-ignore ~/.ignore'
+alias yw='yum whatprovides'
 
-export PATH=/opt/maven/bin:$PATH
+export PATH=/usr/bin:$MAVEN_HOME/bin:$PATH
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 
