@@ -22,6 +22,8 @@ plugins=(
     zsh-syntax-highlighting
 )
 
+export DISABLE_UPDATE_PROMPT=true
+
 source $ZSH/oh-my-zsh.sh
 source ~/.dotfiles/z.sh
 
@@ -126,8 +128,11 @@ export LANGUAGE=en_US.UTF-8
 export LC_COLLATE=C
 export LC_CTYPE=en_US.UTF-8
 
-alias podman='sudo /bin/podman'
+alias podman='sudo /usr/local/bin/podman'
 alias skopeo='sudo /bin/skopeo'
 alias ag='ag --path-to-ignore ~/.ignore'
 
 export PATH=/opt/maven/bin:$PATH
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+
