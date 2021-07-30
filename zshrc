@@ -118,7 +118,7 @@ alias ic='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
 
 alias update='source ~/.zshrc'
 
-export GRADLE_HOME=/opt/gradle/gradle-6.4.1
+export GRADLE_HOME=/opt/gradle/gradle-5.6
 export PATH=$GRADLE_HOME/bin:$PATH
 export MAVEN_HOME=/opt/maven
 export PATH=$MAVEN_HOME/bin:$PATH
@@ -135,5 +135,7 @@ alias yw='yum whatprovides'
 
 export PATH=/usr/bin:$MAVEN_HOME/bin:$PATH
 export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
 
+__git_files () { 
+    _wanted files expl 'local files' _files     
+}
