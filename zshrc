@@ -36,7 +36,7 @@ source ~/.dotfiles/z.sh
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
+#   export EDITOR='vi'
 # else
 #   export EDITOR='mvim'
 # fi
@@ -87,7 +87,7 @@ else
     alias docker='sudo /bin/docker'
 fi
 
-export EDITOR=vim
+export EDITOR=vi
 
 export M3_HOME=/usr/local/apache-maven
 export M2=$M2_HOME/bin
@@ -118,7 +118,7 @@ alias ic='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
 
 alias update='source ~/.zshrc'
 
-export GRADLE_HOME=/opt/gradle/gradle-5.6
+export GRADLE_HOME=/opt/gradle/gradle-6.9
 export PATH=$GRADLE_HOME/bin:$PATH
 export MAVEN_HOME=/opt/maven
 export PATH=$MAVEN_HOME/bin:$PATH
