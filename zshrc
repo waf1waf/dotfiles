@@ -137,6 +137,8 @@ alias yw='yum whatprovides'
 export PATH=/usr/bin:$MAVEN_HOME/bin:$PATH
 export PATH="$HOME/.jenv/bin:$PATH"
 
+export PATH=/opt/homebrew/bin:$PATH
+
 __git_files () { 
     _wanted files expl 'local files' _files     
 }
