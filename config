@@ -1,1 +1,11 @@
 LogLevel QUIET
+Host jump-host
+    Hostname 10.30.12.69
+    User jumpuser
+    IdentityFile ~/.ssh/jumpuser
+Host dev
+    Hostname 10.30.11.16
+    ProxyJump jump-host
+Host fed
+    Hostname 10.30.11.12
+    ProxyJump jump-host
