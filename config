@@ -9,3 +9,7 @@ Host dev
 Host fed
     Hostname 10.30.11.12
     ProxyJump jump-host
+Host github.com
+    Hostname ssh.github.com
+    Port 443
+    User git

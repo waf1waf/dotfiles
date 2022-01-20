@@ -1,5 +1,6 @@
 export ZSH=~/.oh-my-zsh
-ZSH_THEME="steeef"
+ZSH_THEME="my-agnoster"
+prompt_context(){}
 HYPHEN_INSENSITIVE="true"
 export UPDATE_ZSH_DAYS=1
 DISABLE_AUTO_TITLE="true"
@@ -13,7 +14,7 @@ plugins=(
     git
     history
     last-working-dir
-    osx
+    macos
     sudo
     tmux 
     web-search
@@ -139,3 +140,8 @@ export PATH="$HOME/.jenv/bin:$PATH"
 __git_files () { 
     _wanted files expl 'local files' _files     
 }
+#export PATH=/opt/homebrew/Cellar/exa/0.10.1/bin:$PATH
+#alias ls='exa'
+#alias ll='exa -l'
+
+eval "$(jenv init -)"
