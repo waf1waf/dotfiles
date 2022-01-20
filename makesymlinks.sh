@@ -70,7 +70,7 @@ if [ `uname` == 'Linux' ]; then
     rmdir /home/waynef/Desktop /home/waynef/Documents /home/waynef/Downloads /home/waynef/Music /home/waynef/Pictures /home/waynef/Public /home/waynef/Templates /home/waynef/Videos 2>/dev/null
     rm -f ~/.gitconfig
     ln -s $dir/gitconfig-work ~/.gitconfig
-    git config --global user.email "wayne.franklin@tridsys.com"
+    git config --global user.email "wfranklin@owlcyberdefense.com"
 else
     rm -f ~/.gitconfig
     ln -s $dir/gitconfig-home ~/.gitconfig
