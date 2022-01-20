@@ -59,7 +59,6 @@ fi
 rm -f $HOME/.ssh/config
 ln -s $dir/config $HOME/.ssh/config
 
-
 # Make directory for persistent undo
 echo "Create vim persistent undo directory"
 mkdir -p ~/.vim/undodir
@@ -80,5 +79,7 @@ fi
 git config --global user.name "Wayne Franklin"
 git config --global color.ui true
 git config --global push.default simple
+
+ln -s ~/.dotfiles/my-agnoster.zsh-theme ~/.oh-my-zsh/custom/themes/my-agnoster.zsh-theme
 
 exit 0

@@ -26,7 +26,7 @@ plugins=(
 export DISABLE_UPDATE_PROMPT=true
 
 source $ZSH/oh-my-zsh.sh
-source ~/.dotfiles/z.sh
+# source ~/.dotfiles/z.sh
 
 # User configuration
 
@@ -142,8 +142,12 @@ export PATH=/opt/homebrew/bin:$PATH
 __git_files () { 
     _wanted files expl 'local files' _files     
 }
+
 #export PATH=/opt/homebrew/Cellar/exa/0.10.1/bin:$PATH
 #alias ls='exa'
 #alias ll='exa -l'
 
 eval "$(jenv init -)"
+
+[[ -s /Users/waynef/homebrew/autojump.sh ]] && /Users/waynef/homebrew/etc/autojump.sh
+eval "$(jump shell zsh)"
