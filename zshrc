@@ -147,6 +147,10 @@ __git_files () {
 #alias ls='exa'
 #alias ll='exa -l'
 
-eval "$(jenv init -)"
+if [[ `uname` == 'Darwin' ]]
+then
+    eval "$(jenv init -)"
+fi
+
 
 source ~/.dotfiles/z.sh
