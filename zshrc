@@ -149,5 +149,4 @@ __git_files () {
 
 eval "$(jenv init -)"
 
-[[ -s /Users/waynef/homebrew/autojump.sh ]] && /Users/waynef/homebrew/etc/autojump.sh
-eval "$(jump shell zsh)"
+source ~/.dotfiles/z.sh
